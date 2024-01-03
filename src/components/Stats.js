@@ -6,7 +6,7 @@ const Stats = () => {
 
   useEffect(() => {
     // Fetch stats
-    fetch('/api/getStats')
+    fetch('https://mern-pr-backend.onrender.com/api/getStats')
       .then(response => response.json())
       .then((data) => {
         setUserCount(data.userCount)

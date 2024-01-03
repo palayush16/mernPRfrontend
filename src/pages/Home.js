@@ -16,7 +16,7 @@ const Home = () =>{
     //try fetching all workout and list them in all of the homepage
     useEffect(()=>{
         const fetchWorkouts=async()=>{
-            const response=await fetch('/api/workouts',{
+            const response=await fetch('https://mern-pr-backend.onrender.com/api/workouts',{
                 headers: {
                     'Authorization': `Bearer ${user.token}`
                 }
